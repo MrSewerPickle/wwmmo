@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
   <style name="Button" parent="android:style/Widget.Button">
-    <item name="android:background">@drawable/button_bg</item>
+    <item name="android:padding">5dip</item>
+    <item name="android:background">@drawable/button_native_selector</item>
     <item name="android:textColor">#ffffff</item>
   </style>
 
   <style name="ImageButton" parent="android:style/Widget.ImageButton">
-    <item name="android:background">@drawable/button_bg</item>
+    <item name="android:background">@drawable/button_native_selector</item>
     <item name="android:textColor">#ffffff</item>
   </style>
 
@@ -31,7 +32,7 @@
     <item name="android:background">@drawable/top_pane_bg</item>
   </style>
 
-  <style name="ActionBar" parent="Base.Widget.AppCompat.ActionBar">
+  <style name="ActionBar" parent="Widget.AppCompat.ActionBar">
     <item name="android:background">@drawable/top_pane_bg</item>
     <item name="background">@drawable/top_pane_bg</item>
     <item name="android:layout_marginBottom">-10dp</item>
@@ -51,27 +52,11 @@
     <item name="android:shadowRadius">1.0</item>
   </style>
 
-  <style name="TabLayout" parent="Widget.Design.TabLayout">
-    <item name="tabMaxWidth">200dp</item>
-    <item name="tabIndicatorColor">?attr/colorAccent</item>
-    <item name="tabIndicatorHeight">2dp</item>
-    <item name="tabPaddingStart">12dp</item>
-    <item name="tabPaddingEnd">12dp</item>
-    <item name="tabBackground">?attr/selectableItemBackground</item>
-    <item name="tabTextAppearance">@style/TabTextAppearance</item>
-    <item name="tabSelectedTextColor">?android:textColorPrimary</item>
-  </style>
-  <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
-    <item name="android:textSize">14sp</item>
-    <item name="android:textColor">?android:textColorSecondary</item>
-    <item name="textAllCaps">true</item>
-  </style>
-
   <style name="WarWorlds.PreferenceThemeOverlay" parent="@style/PreferenceThemeOverlay">
     <item name="android:background">@color/default_background</item>
   </style>
 
-  <style name="WarWorlds.Base" parent="Base.Theme.AppCompat">
+  <style name="WarWorlds.Base" parent="Theme.AppCompat">
     <item name="android:windowBackground">@color/default_background</item>
 
     <item name="buttonStyle">@style/Button</item>
